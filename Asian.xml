@@ -1,0 +1,147 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<!--Internal DTD-->
+<!DOCTYPE recipes [
+<!--+ one or more, * zero or more, ? zero or one-->
+<!--must add two tags?-->
+<!ELEMENT recipes (recipe+, creator+)>
+    <!ATTLIST recipes type CDATA "Asian">
+  <!ELEMENT recipe (chef?, origin, title, ingredients+, instructions+, time+,
+  serves+, properties+, difficulty+, tastylevel+,url+,img+)>
+  <!ELEMENT chef (givenname, surname)>  <!--attribute is nationality-->
+    <!ATTLIST chef nationality CDATA "America">
+  <!ELEMENT givenname (#PCDATA)>
+  <!ELEMENT surname (#PCDATA)>
+  <!ELEMENT nationality (#PCDATA)>
+  <!ELEMENT origin (#PCDATA)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT ingredients (main+, ingredient*)>
+  <!ELEMENT main (#PCDATA)>
+  <!ELEMENT ingredient (#PCDATA)>
+  <!ELEMENT instructions (#PCDATA)>
+  <!ELEMENT time (hours?, minutes?, seconds?)>
+  <!ELEMENT hours (#PCDATA)>
+  <!ELEMENT minutes (#PCDATA)>
+  <!ELEMENT seconds (#PCDATA)>
+  <!ELEMENT serves (#PCDATA)>
+  <!ELEMENT properties (#PCDATA)>
+  <!ELEMENT difficulty (#PCDATA)>
+  <!ELEMENT tastylevel (#PCDATA)>
+  <!ELEMENT url (#PCDATA)>
+  <!ELEMENT img (#PCDATA)>
+  <!ELEMENT creator (#PCDATA)>
+  <!ENTITY author "Juyong Kim">
+  <!ENTITY copyright "Copyright c32244203">
+  <!--<author>&author;&copyright;</author>-->
+]>
+
+<recipes type="Asian">
+<!--Asian Recipe 1-->
+    <recipe>
+        <chef nationality="American">
+        <!--I'm korean so i feel like this should be allowed-->
+            <givenname>Chi</givenname>
+            <surname>Kim</surname>
+        </chef>
+        <origin>North Korea</origin>
+        <title>Kimchi Toast</title>
+        <ingredients>
+            <main>kimchi</main>
+            <ingredient>margarine</ingredient>
+            <ingredient>toast</ingredient>
+        </ingredients>
+        <instructions>cover 2 pieces of bread in margarine both sides</instructions>
+        <instructions>cut a hole in the bread</instructions>
+        <instructions>put the bread on a frying pan</instructions>
+        <instructions>put some Kimchi in the hole</instructions>
+        <instructions>fry it on both sides</instructions>
+        <instructions>done</instructions>
+        <time>
+            <hours>0</hours>
+            <minutes>15</minutes>
+            <seconds>0</seconds>
+        </time>
+        <serves>2</serves>
+        <properties>vegetarian</properties>
+        <properties>vegan</properties>
+        <difficulty>medium</difficulty>
+        <tastylevel>10</tastylevel>
+        <url>https://en.wikipedia.org/wiki/Kimchi</url>
+        <img>"kimchi.jpeg"</img>
+    </recipe>
+<!--Asian Recipe 2-->
+    <recipe>
+        <chef nationality="Chinese">
+            <givenname>Andrew</givenname>
+            <surname>Wong</surname>
+        </chef>
+        <origin>Taiwan</origin>
+        <title>Dumpling Toast</title>
+        <ingredients>
+            <main>dumpling</main>
+            <ingredient>butter</ingredient>
+            <ingredient>toast</ingredient>
+            <ingredient>cheese</ingredient>
+        </ingredients>
+        <instructions>cover 2 pieces of bread in butter sauce both sides</instructions>
+        <instructions>cut 3 holes in the bread</instructions>
+        <instructions>put the bread on a frying pan</instructions>
+        <instructions>boil the dumplings for 10 minutes</instructions>
+        <instructions>drain the dumplings</instructions>        
+        <instructions>put the dumplings and cheese into the holes</instructions>
+        <instructions>fry it on both sides</instructions>
+        <instructions>done</instructions>
+        <time>
+            <hours>0</hours>
+            <minutes>25</minutes>
+            <seconds>15</seconds>
+        </time>
+        <serves>2</serves>
+        <properties>vegetarian</properties>
+        <difficulty>easy</difficulty>
+        <tastylevel>4</tastylevel>
+        <url>https://en.wikipedia.org/wiki/Dumpling</url>
+        <img>"dumpling.jpeg"</img>
+    </recipe>
+<!--Asian Recipe 3-->
+    <recipe>
+        <chef nationality="American">
+        <!--I'm korean so i feel like this should be allowed-->
+            <givenname>Chi</givenname>
+            <surname>Kim</surname>
+        </chef>
+        <origin>North Korea</origin>
+        <title>Kimchi Fried Rice</title>
+        <ingredients>
+            <main>kimchi</main>
+            <ingredient>Butter</ingredient>
+            <ingredient>garlic</ingredient>
+            <ingredient>onion</ingredient>
+            <ingredient>eggs</ingredient>
+            <ingredient>rice</ingredient>
+        </ingredients>
+        <instructions>dice all the kimchi/garlic/onion finely</instructions>
+        <instructions>cook some rice</instructions>
+        <instructions>put butter in the pan with the garlic</instructions>
+        <instructions>once garlic is golden chuck in the kimchi and onion </instructions>
+        <instructions>in another pan fry an egg with butter</instructions>
+        <instructions>mix in some rice</instructions>
+        <instructions>after 5 minutes finish up and place the fried egg on top</instructions>
+        <instructions>done</instructions>
+        <time>
+            <hours>0</hours>
+            <minutes>30</minutes>
+            <seconds>0</seconds>
+        </time>
+        <serves>3</serves>
+        <properties>vegetarian</properties>
+        <difficulty>hard</difficulty>
+        <tastylevel>11</tastylevel>
+        <url>https://en.wikipedia.org/wiki/Kimchi</url>
+        <img>"kimchi.jpeg"</img>
+    </recipe>
+    <creator>
+        &author;
+        &copyright;
+    </creator>
+</recipes>
