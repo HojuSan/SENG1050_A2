@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--head-->
+<head>
+  <meta charset="UTF-8">
+  <!--title-->
+  <title>Chef Master Recipes HomePage</title>
+  <!--selector to style multiple elements-->
+  <style> 
+    [class*="food"] {
+      background: rgb(206, 151, 33);
+      color:rgb(32, 97, 196);
+    }
+    </style>
+<!--linking the css to the homepage-->
+	<link rel="stylesheet" type="text/css" href="Style.css" >
+</head>
+<!--start of body-->
+<body>
+    <!--in site title-->
+      <h1>Chef Master Recipes</h1>
+
+      <p style="color: blue;" >Here is a quote from the man, the legend Juyong Kim about his new website!</p>
+
+      <!--abbreviation was used-->
+      <blockquote>
+          Hi guys from the Master Chef himself Juyong Kim!! <br>
+          5 times winner of the <abbr title="Iron Chef Championship">ICC</abbr> <br>
+          8 times winner of <abbr title="Most Wanted Bachelor">MWB</abbr>
+          <br>Here to bring you some more <br>
+          <!--empasis used for dramatic effect-->
+          <em>JUICY! <br>DELICIOUS! <br>SCRUMDIDDLYUMPTIOUS!<br>RECIPES!</em> 
+      </blockquote>
+
+      <hr/>
+
+      <!--just using a span for the specs-->
+      <span>
+        <a href="Asian.xml">Asian Cuisine</a> -
+        <a href="European.xml">European Cuisine</a>
+      </span>
+
+      <hr/>
+
+      <!--unsorted list with preview of foods-->
+      <ul>
+        <li>
+          <!--using class attribute-->
+          <h2 class="food">Cheesy Toast</h2>
+          <div class="img" >
+            <img src="cheesytoast.jpg" alt="Cheesy Toast" style="float:left"/>
+            This delicious meal is all about simplicity. Bread and cheese... How can you go wrong? <br>
+            Answer is you can't. This finger lickingly good meal is so easy you need to be careful of your
+            own waist line after learning it.
+          </div>
+          <!--clears lines after float image, so it does't botch together-->
+          <br style="clear:both" />
+        </li>
+
+        <li>
+          <h2 class="food">French Toast</h2>
+          <div class="img">
+            <img src="frenchtoast.jpg" alt="French Toast" style="float:left"/>
+            When you want to be all fancy with your tinder date, and you just don't know what to make <br>
+            Have no fear, french toast is here. This incredibly easy meal is also very tasty and sounds fancy to boot.
+          </div>
+          <br style="clear:both" />
+        </li>
+        
+        <li>
+          <h2 class="food">Kimchi Fried Rice</h2>
+          <div class="img">
+            <img src="friedrice.jpg" alt="Kimchi Fried Rice" style="float:left"/>
+            Now you've made the toast for breakie. Now you gotta make some asian but you want to show your multiculturalism <br>
+            We have you covered with this recipe called, Kimchi Fried Rice. Also on the easy side and adds that extra kick <br>
+            of spice to your life with them asian spices from the kimchi.
+          </div>
+          <br style="clear:both" />
+        </li>
+      </ul>
+
+      <hr>
+
+      <!--absoloute url link-->
+      <p>
+        If any extra information on ingredients is required please <a href="https://www.wikipedia.org/">click on this link</a> <br>
+        which will forward you to wikipedia where you can search all the ingredients up.
+      </p>
+      <!--footer note with creator information-->
+    <footer>
+      <address>
+        Juyong Kim <br>
+        Student at Newcastle University <br>
+        Email: c3244203@uon.edu.au
+      </address>
+      <!--copyright symbol will always be on the right corner of the screen-->
+      <small class="bottomright">&copy; Copyright 2020, SENG1050 Industries</small>
+    </footer>
+</body>
+
+</html>

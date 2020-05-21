@@ -1,0 +1,126 @@
+#head 
+{ 
+    width: 100% 
+}
+
+body 
+{
+    background-image:url('background.jpg');
+    text-align: left;
+    margin:1cm; 
+}
+footer
+{
+    color: rgb(48, 21, 5);
+    text-align: right; 
+}
+/*copyright statement on the right bottom corner of the page.*/
+.bottomright {
+    position:fixed;
+    bottom:0;
+    right:0;
+  }
+blockquote
+{
+    font-size: 140%;
+    color: rgb(10, 46, 85); 
+}
+em
+{
+    font-size: 140%;
+}
+strong
+{
+    font-size: 140%;
+}
+/*h1 is centred and uppercase*/
+h1 
+{ 
+    font-family: castellar;
+    font-size: 300%;
+    color:rgb(11, 72, 165);
+    text-transform: uppercase;
+    text-align: center 
+}
+/*h2 is underlined and upper case*/
+h2 
+{ 
+    font-size: 200%;
+    text-align: left; 
+    text-transform: uppercase;
+    color: rgb(4, 109, 100);
+    text-decoration: underline;
+}
+p
+{
+    font-size: 120%;
+   color: rgb(17, 22, 37); 
+   font-style: italic
+}
+img
+{
+    max-width:100%;
+    max-height:100%;
+}
+div
+{
+    background-color: rgb(31, 30, 30);
+    width: 1700px;
+    height: 500px;
+    border: 15px solid rgb(133, 212, 133);
+    padding: 50px;
+    color: rgb(156, 110, 23); 
+    font-size: 150%;
+    text-align: left; 
+    font-family: bahnschrift;
+}
+span
+{
+    font-size: 120%;
+    text-align: left;
+    background-color: rgb(191, 191, 192);
+}
+
+.space { margin-top: 500px; }
+
+a:link {color: rgb(7, 7, 207)}
+a:visited {color:rgb(12, 35, 112)}
+a:active {color:red}
+a:hover {font-size:120%; color:rgb(46, 5, 54)}
+
+/*needs a class attribute, .xxx selector, div, span*/
+
+#location { text-align: left }
+#location img { vertical-align: top; float: left }
+
+#quick { vertical-align: top; text-align: right }
+
+#main { width: 100%; border-top-style: groove; border-bottom-style: groove }
+
+#menu { width: 15%; border-right-style: groove; vertical-align: top; padding: 0 }
+#menu ul { margin: 0; padding: 0 }
+#menu li { list-style-type:none; margin: 1ex 1ex 1ex 0ex; background-color: #eeeeee }
+
+#foot { width: 100% }
+
+#valid { vertical-align: top }
+
+#copyright { vertical-align: top; text-align: right; font-size: x-small }
+
+kbd { font-family: monospace }
+samp { font-family: monospace }
+.menu { font-family: monospace }
+.file { font-family: monospace }
+.host { font-family: monospace }
+
+div.img { text-align: center; padding: 0.5em }
+div.img img { border-style: solid }
+
+div.toc { text-align: center; margin-left: auto; margin-right: auto }
+
+.due { font-size: large; font-weight: bold }
+strong.warning { color: #cc0000; background-color: #ffff33; border-style: none }
+.warning { text-align: center; color: #cc0000; background-color: #ffff33; border-style: outset }
+.warning h3 { font-size: x-large; text-decoration: underline }
+.warning p { font-style: italic }
+.todo { color: red }
