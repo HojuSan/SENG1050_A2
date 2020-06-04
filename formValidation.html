@@ -34,6 +34,7 @@
             if(document.easyform.yourname.value == "")
             {
                 alert("your a poopy head");
+                event.preventDefault();
                 return false;
             }
             else
@@ -97,7 +98,7 @@
             <div id="recipeInfo">
                 <div>
                     <label for="recipeName">Name of dish</label>
-                    <input type="text" name="recipeName" id="recipeName" required>
+                    <input type="text" name="recipeName" id="recipeName">
                 </div>
 
                 <div>
@@ -155,10 +156,8 @@
                 </div>
             </div>
 
-
-            <input type="submit" value="Click Here to Submit" onclick="checkName()"> 
-            <input type="reset">   
-        </form>
+                <input type="submit" value="Click Here to Submit" onclick="checkName()"> 
+                <input type="reset">   
     </div>
     <!--copyright symbol will always be on the right corner of the screen-->
     <small class="bottomright">&copy; Copyright 2020, SENG1050 Industries</small>
