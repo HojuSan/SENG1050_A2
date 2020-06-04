@@ -27,11 +27,26 @@
         }
     </style>			
 
+    <!--requires minimum 3 inputs-->
     <script type="text/javascript">
-        function checkNameYear() 
+        function checkName() 
+        {
+            if(document.easyform.yourname.value == "")
+            {
+                alert("your a poopy head");
+                return false;
+            }
+            else
+            {
+                alert("Thank you, "+ document.easyform.yourname.value + ".");              
+                return true; 
+            }
+        }/* checkName() */
+
+        function checkRecipe()
         {
 
-        } // checkNameYear()       
+        }
     </script>
 
     <!--selector to style multiple elements-->
@@ -63,7 +78,7 @@
                 </div>
 
                 <div>
-                    <label for="yourname">How many recipes have you submited before?</label>
+                    <label for="recipes">How many recipes have you submited before?</label>
                     <input type="number" name="recipesSubmitted" id="recipesSubmitted">
                 </div>
 
@@ -80,41 +95,71 @@
             </div>
 
             <div id="recipeInfo">
+                <div>
+                    <label for="recipeName">Name of dish</label>
+                    <input type="text" name="recipeName" id="recipeName" required>
+                </div>
 
-            </div>
+                <div>
+                    Course Type:
+                    <div id="course">
+                        <select name="cartoon">
+                            <option>appetiser</option>
+                            <option>main course</option>
+                            <option>dessert</option>
+                            <option>other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <br>
 
-            <div>
-                You will graduate from Wellesley Class of:
-                <div id="graduation">
-                    <label for="graduation2008">2008</label>
-                    <input type="radio" name="graduation" value="2008" id="graduation2008"><br>
+                </div>
+                    Recipe Ingredients
+                    <br>
+                    <textarea id = "myTextArea", rows = "10",cols = "80"> 
+                        <input type="text" required>
+                    </textarea>
+                <div>
 
-                    <label for="graduation2009">2009</label>
-                    <input type="radio" name="graduation" value="2009" id="graduation2009"><br>
-                    
-                    <label for="graduation2010">2010</label>
-                    <input type="radio" name="graduation" value="2010" id="graduation2010"><br>
-                    
-                    <label for="graduation2011">2011</label>
-                    <input type="radio" name="graduation" value="20011" id="graduation2011"><br>
+                    <br>
+
+                </div>
+                    Recipe Instructions
+                    <br>
+                    <textarea id = "myTextArea2", rows = "10",cols = "80"> 
+                    </textarea>
+                <div>
+
+                <div>
+                    Dish Properties
+                    <div>
+                        <label for="quick">quick</label>
+                        <input type="checkbox" name="quick" value="quick" id="propertyQuick"><br>
+
+                        <label for="served cold">served cold</label>
+                        <input type="checkbox" name="served cold" value="served cold" id="propertyServedCold"><br>
+                        
+                        <label for="vegetarian">vegetarian friendly</label>
+                        <input type="checkbox" name="vegetarian" value="vegetarian" id="propertyVegetarian"><br>
+
+                        <label for="vegan">vegan friendly</label>
+                        <input type="checkbox" name="vegan" value="vegan" id="propertyVegan"><br>
+                        
+                        <label for="diabetic friendly">diabetic friendly</label>
+                        <input type="checkbox" name="diabetic friendly" value="diabetic friendly" id="propertiesDiabeticFriendly"><br>
+
+                        <label for="spicy">spicy</label>
+                        <input type="checkbox" name="spicy" value="spicy" id="propertiesSpicy"><br>
+                    </div>
                 </div>
             </div>
 
-            <div>
-                Tell me your favorite cartoon character:
-                <div id="cartoon">
-                    <select name="cartoon">
-                        <option>select one</option>
-                        <option>Bugs Bunny</option>
-                        <option>Mickey Mouse</option>
-                        <option>Yosemite Sam</option>
-                        <option>Betty Boop</option>
-                    </select>
-                </div>
-            </div>
 
-            <input type="submit" value="Click Here to Submit"> 
+            <input type="submit" value="Click Here to Submit" onclick="checkName()"> 
             <input type="reset">   
         </form>
     </div>
+    <!--copyright symbol will always be on the right corner of the screen-->
+    <small class="bottomright">&copy; Copyright 2020, SENG1050 Industries</small>
 </body>
