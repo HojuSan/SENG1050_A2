@@ -47,32 +47,40 @@
 </head>
 <body>
     <div id="container">
-        <h1>Validation practice</h1>
+        <h1>Recipe Submissions</h1>
         <form name="easyform" method="post" action="http://jkorpela.fi/cgi-bin/echo.cgi" onSubmit="return checkNameYear()">
             <input type="hidden" name="_recipient" value="guest1@cs.wellesley.edu">
             
-            <div>
-                <label for="yourname">Please enter your name</label>
-                <input type="text" name="yourname" id="yourname">
-            </div>
-            
-            <div>
-                <label for="birthyear">Please enter your birth year</label>
-                <input type="text" name="birthyear" id="birthyear">
-            </div>
+            <div id="personalInfo">
+                <div>
+                    <label for="yourname">Please enter your name</label>
+                    <input type="text" name="yourname" id="yourname">
+                </div>
+                
+                <div>
+                    <label for="birthyear">Please enter your email address</label>
+                    <input type="text" name="email" id="email">
+                </div>
 
-            <div>
-                Going to be a ghost for halloween?
-                <div id="ghost">
+                <div>
+                    <label for="yourname">How many recipes have you submited before?</label>
+                    <input type="number" name="recipesSubmitted" id="recipesSubmitted">
+                </div>
+
+                <br>
+                Have you cooked professionally before?
+                <div>
                     <label for="yes">Yes</label>
                     <input type="checkbox" name="ghost" value="yes" id="yes">
                 
                     <label for="no">No</label>
                     <input type="checkbox" name="ghost" value="no" id="no">
-                
-                    <label for="secret">It's a secret</label>
-                    <input type="checkbox" name="ghost" value="Secret" id="secret">
                 </div>
+
+            </div>
+
+            <div id="recipeInfo">
+
             </div>
 
             <div>
